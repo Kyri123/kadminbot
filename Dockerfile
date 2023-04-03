@@ -7,6 +7,7 @@ COPY tsconfig*.json ./
 COPY .eslintrc ./
 COPY ./src ./src
 
+RUN yarn install
 RUN yarn lint
 RUN yarn Build
 
