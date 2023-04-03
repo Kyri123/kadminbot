@@ -1,0 +1,44 @@
+version: "3.9"
+
+services:
+  kadmin-arklin2:
+    depends_on:
+      - mongodb
+    build: "./"
+    restart: always
+    environment:
+      - TOKEN=
+      # MongoDB
+      - MONGODB_PORT=27017
+      - MONGODB_HOST=mongodb
+      - MONGODB_USER=botusername
+      - MONGODB_PASSWD=botpasswd
+      - MONGODB_DATABASE=botdatabase
+    ports:
+      - target: 28100
+        published: 28100
+        protocol: udp
+        mode: host
+      - target: 28100
+        published: 28100
+        protocol: tcp
+        mode: host
+      - "28080:28080"
+    volumes:
+      - ./mount/bot/:/mount/
+    networks:
+      - botnet
+
+  mongodb:
+    image: mongo
+    volumes:
+      - './mount/mongodb:/data/db'
+    environment:
+      MONGO_INITDB_DATABASE: botdatabase
+      MONGO_INITDB_ROOT_USERNAME: botusername
+      MONGO_INITDB_ROOT_PASSWORD: botpasswd
+    networks:
+      - botnet
+
+networks:
+  botnet:

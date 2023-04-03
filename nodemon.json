@@ -1,0 +1,13 @@
+{
+  "verbose": true,
+  "watch": [
+    "./src"
+  ],
+  "ignore": [
+    ".git",
+    "node_modules",
+    "dist"
+  ],
+  "ext": "ts",
+  "exec": "ts-node ./src/Bot.ts"
+}

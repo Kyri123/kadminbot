@@ -1,0 +1,3 @@
+DiscordBot.on( "ready", ( Client ) => {
+	
+} )
