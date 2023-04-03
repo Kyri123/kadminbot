@@ -110,3 +110,4 @@ log.log
 bot
 mount
 .env.production
+.env.dev

@@ -22,7 +22,8 @@ const TaskFunction = async () => {
 							`**${ Release.name }**\n` +
 							"\n" +
 							"Bitte beachtet dass dies eine sehr \"experimentelle\" Version. Viele Features aus dem vorherigen ArkLin2 sind nicht implementiert. \n" +
-							"**Außerdem modifiziert das neue ArkLin sehr aggressiv die arkamanger.cfg Dateien. Stellt sicher dass alle Arkserver davor runtergefahren sind!**\n\n" +
+							"Das Panel sollte das Update automatisch ausführen (der Script ist noch experimentell, sollte dies nicht der Fall sein bitte meldet es)\n\n" +
+							"Changelog ist auch auf dem Panel verfügbar. Viel Spaß! :)\n\n" +
 							`Changelog: ${ Release._links.self }\n` +
 							`Bug Report / Vorschläge / Suggestion: ${ Release._links.opened_issues_url }\n` +
 							`Repo: https://git.kyrium.space/arktools/kadmin-arklin2`
