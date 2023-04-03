@@ -8,16 +8,6 @@ services:
     restart: always
     env_file:
       - .env.production
-    ports:
-      - target: 28100
-        published: 28100
-        protocol: udp
-        mode: host
-      - target: 28100
-        published: 28100
-        protocol: tcp
-        mode: host
-      - "28080:28080"
     volumes:
       - ./mount/bot/:/mount/
     networks:
