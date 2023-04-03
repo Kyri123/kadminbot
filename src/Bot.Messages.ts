@@ -1,3 +1,3 @@
-DiscordBot.on( "messageCreate", ( Msg ) => {
-	
+DiscordBot.on( "messageCreate", () => {
+
 } )

@@ -109,3 +109,4 @@ log.log
 .idea/
 bot
 mount
+.env.production

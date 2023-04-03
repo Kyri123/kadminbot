@@ -1,3 +1,3 @@
-DiscordBot.on( "messageReactionAdd", ( Msg ) => {
+DiscordBot.on( "messageReactionAdd", () => {
 
 } )
