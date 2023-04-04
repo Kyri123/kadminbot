@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ts-node ./src/Bot.ts",
     "dev": "nodemon",
-    "lint": "eslint src --fix",
+    "Test": "eslint src --fix",
     "Build": "tsc --project tsconfig.json"
   },
   "dependencies": {
