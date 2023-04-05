@@ -12,11 +12,11 @@
     "module": "commonjs",
     "rootDir": "./src/",
     "outDir": "./bot/",
-    "strict": true,
+    "strict": false,
     "moduleResolution": "node",
     "importHelpers": true,
     "experimentalDecorators": true,
-    "skipLibCheck": true,
+    "skipLibCheck": false,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
@@ -35,7 +35,9 @@
     "./**/*.ts"
   ],
   "exclude": [
-    "node_modules",
-    "dist"
-  ],
+    "node_modules/**/*",
+    "dist",
+    "build",
+    "bot"
+  ]
 }
