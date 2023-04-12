@@ -46,8 +46,7 @@ const TaskFunction = async() => {
 					if ( Channel ) {
 						const DBRelease = await DB_GithubReleases.create( ReleaseData );
 						if ( DBRelease ) {
-							// todo: remove dirty fix DBRelease.tag_name !== "2.0.0"
-							if ( Channel && Channel.isTextBased() && DBRelease.tag_name !== "2.0.0" ) {
+							if ( Channel && Channel.isTextBased() ) {
 								await Channel.sendTyping();
 								await Channel.send( "<@&722088747814092813> \n\n" +
 									`**${ DBRelease.name }**\n` +
