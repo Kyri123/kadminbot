@@ -3,7 +3,7 @@ import { IGithubReleases } from "../Types/MongoDB";
 import DB_GithubReleases   from "../MongoDB/DB_GithubReleases";
 
 
-const TaskEvery = 300; // In Seconds
+const TaskEvery = 60; // In Seconds
 const StartOnInit = 1; // In Seconds
 const Enabled = true;
 
