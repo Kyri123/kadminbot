@@ -8,6 +8,12 @@ services:
     restart: always
     env_file:
       - .env.production
+    environment:
+      - MONGODB_PORT=27017
+      - MONGODB_HOST=mongodb
+      - MONGODB_USER=botusername
+      - MONGODB_PASSWD=botpasswd
+      - MONGODB_DATABASE=botdatabase
     volumes:
       - ./mount/bot/:/mount/
     networks:
